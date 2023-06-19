@@ -12,18 +12,66 @@ body {
 
 h1 {
   font-size: 5rem;
+
 }
 
 footer {
   text-align: right;
   color: midnightblue;
+
 }
 
-.creative{
-  color: midnightblue;
-}
-
-img{
+/*TODO: Decrease image size and make it float to the left*/
+.tile-image{
+  height: 200px;
   float: left;
 }
 
+/*TODO: Change color of the "creative" word in title*/
+.creative{
+  color: midnightblue;
+
+}
+
+/*TODO: make text be to the right of img*/
+/*TODO: align both the text and images*/
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.card{
+  width: 45%;
+}
+
+/*TODO: have space between the image and text*/
+.tile-image{
+  margin-right: 50px;
+}
+
+/*TODO: center motto when shrinked*/
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
